@@ -93,11 +93,11 @@ testData = load_data(opt.test, opt.n, vocab)
 
 trainData = torch.IntTensor(trainData)
 trainData = trainData:transpose(2,1)
-print(trainData)
+--print(trainData)
 
 validData = torch.IntTensor(validData)
 validData = validData:transpose(2,1)
-print(validData)
+--print(validData)
 
 testData = torch.IntTensor(testData)
 testData = testData:transpose(2,1)
