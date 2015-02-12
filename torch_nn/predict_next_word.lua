@@ -35,7 +35,7 @@ output = model:forward(input):exp();
 
 prob, indices = torch.sort(output,true);
 vocab_ByIndex = model.vocab_ByIndex;
-
+print(vocab_ByIndex)
 for i = 1,k do
   print(string.format("%s %s %s %s Prob: %f", word1, word2, word3, vocab_ByIndex[indices[1][i]], prob[1][i]));
 end

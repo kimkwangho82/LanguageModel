@@ -13,7 +13,7 @@ function train(epochs,use_manual_technique)
 start_time = os.clock();
 
 -- SET HYPERPARAMETERS HERE.
-batchsize = 100;  -- Mini-batch size.
+batchsize = 128;  -- Mini-batch size.
 learning_rate = 0.1;  -- Learning rate; default = 0.1.
 momentum = 0.9;  -- Momentum; default = 0.9.
 numhid1 = 50;  -- Dimensionality of embedding space; default = 50.
